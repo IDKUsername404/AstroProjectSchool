@@ -1,0 +1,45 @@
+---
+import Welcome from '../components/Welcome.astro';
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro'
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
+import '../styles/index.css'
+---
+
+<Layout>
+<Header />
+<div id="cont">
+<div id="hero">
+
+  <h1 style="font-size:3.5rem">A Website about <b id="staggerFade">Space</b></h1>
+  
+  <button id="action" onclick="location.href='/yt'">Click Here To View A VIDEO!</button>
+  
+</div>
+
+<div id="ideas">
+  <div class="idea">
+    <h2>
+      Stars
+    </h2>
+		<p><b>Stars</b> are spheres of gas that emit heat and light</p>
+  </div>
+  <div class="idea">
+    <h2>
+      Planets
+    </h2>
+    <p><b>Planets</b> are big space rocks that spin</p>
+  </div>
+
+</div>
+  
+</div>
+
+</Layout>
+
+
+
+

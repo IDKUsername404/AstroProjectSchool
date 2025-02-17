@@ -1,0 +1,82 @@
+#cont {
+  background-color: black;
+}
+
+#hero {
+  background-image: url('https://images.unsplash.com/photo-1656489782764-443559c29211?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  width: 100%;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#action {
+  padding: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border-radius: 4rem;
+  border-color: rgba(0, 205, 255, 1);
+  border-style: solid;
+  font-size: 1.2rem;
+  border: 1px solid rgba(0, 205, 255, 1);
+  background-color: rgba(21, 146, 184, 0.7);
+  color: white;
+}
+
+#ideas {
+  background-color: #1e1f1f;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 3vh;
+}
+
+.idea {
+  width: 30vw;
+  background-color: #2f3131;
+  height: 70%;
+  border-radius: 25px;
+  padding: 10px;
+  text-align: center;
+}
+
+.idea > h2 {
+  font-size: 2rem;
+  margin-bottom: 5%;
+}
+
+.idea > p {
+  font-size: 1.1rem;
+}
+
+#hero {
+  opacity: 0;
+  animation: fade 2s forwards;
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+#staggerFade {
+  opacity: 0;
+  animation: staggerFade 2s forwards;
+}
+
+@keyframes staggerFade {
+  to {
+    opacity: 1;
+  }
+}
