@@ -1,0 +1,11 @@
+
+#dis {
+    opacity: 1;
+    animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0
+    }
+}
